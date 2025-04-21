@@ -22,15 +22,13 @@ export default function Cart() {
           <ul>
             {state.cart.map((item, index) => (
               <li key={index}>
-                {item.name} – {item.price} ₸
-                <button onClick={() => removeItem(index)}>Remove</button>
+                {item.name} – {item.price} 
+                <button>Remove</button>
               </li>
             ))}
           </ul>
-          <h3>Жалпы баға: {totalPrice} ₸</h3>
-          <button onClick={() => dispatch({ type: "CLEAR_CART" })}>
-            Clear Cart
-          </button>
+          <h3>Жалпы баға: {totalPrice}</h3>
+          <button >Clear Cart</button>
         </>
       )}
     </div>
